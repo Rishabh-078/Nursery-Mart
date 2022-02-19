@@ -1,0 +1,58 @@
+@import "./style/header.css";
+@import "./style/footer.css";
+@import "./style/cards.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a23df1;
+    --secondary-color: white;
+    --tertiary-color: grey;
+    --primary-color-b: #D2A0F8;
+    --quaternary-color: rgb(8, 100, 8);
+    --shadow-color: rgb(0 0 0 / 40%);
+    --wishlist-color:rgb(245, 20, 20);
+}
+
+button{
+    cursor: pointer;
+}
+
+main{
+    margin: 2rem;
+}
+
+.heading-center{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.wishlist-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.btn-wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.1rem;
+    height: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.btn-wishlist .fa-heart{
+    font-size: 1.2rem;
+    color:var(--wishlist-color);
+}

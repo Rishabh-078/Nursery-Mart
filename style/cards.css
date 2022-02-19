@@ -1,6 +1,6 @@
 /* Main Category Cards */
 
-.h1-heading{
+.h1-heading {
     padding: 2rem;
     text-align: center;
     font-size: 2.5rem;
@@ -46,7 +46,7 @@
 /* Individual Item Cards */
 .card-wrapper {
     display: grid;
-    grid-template-columns: repeat(4,16rem);
+    grid-template-columns: repeat(4, 16rem);
     justify-content: space-around;
     gap: 1.5rem;
 }
@@ -69,7 +69,7 @@
 
 .badge-disc {
     background-color: var(--quaternary-color);
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     padding: 5px;
     width: fit-content;
     position: absolute;
@@ -83,16 +83,16 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 2px;
-    
+
 }
 
-.ruppee-stroke{
+.ruppee-stroke {
     font-size: inherit;
     text-decoration: line-through;
     font-size: 12px;
 }
 
-.ruppee{
+.ruppee {
     font-size: 1.2rem;
 }
 
@@ -117,11 +117,58 @@
 
 .card-item button {
     display: flex;
-    margin: auto;    
+    margin: auto;
 }
 
-.add-cart-btn{
+.add-cart-btn {
     position: absolute;
     bottom: 0.5rem;
     left: 4rem;
+}
+
+/* Cart Horizontal card */
+
+.horizontal-card {
+    display: flex;
+    box-shadow: rgb(0 0 0 / 24%) 1px 1px 5px;
+}
+
+.img-card-horizontal{
+    width: 12rem;
+    height: 15rem;
+}
+
+.quantity-cart-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-quantity{
+    width: 1.5rem;
+    text-align: center;
+}
+
+.card-horizontal-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-horizontal-desc i{
+    font-size: 1.2rem;
+}
+
+.card-horizontal-desc i:hover{
+    transform: scale(1.2);
+}
+
+.horizontal-price {
+    display: flex;
+    gap: 10px;
+}
+
+.disc-percent{
+    color: var(--tertiary-color);
 }

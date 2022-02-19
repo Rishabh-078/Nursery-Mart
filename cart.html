@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=Images: This component contains responsive image and round image
+    Input: This component included standard Input box as well as input with error, success and warning validations., initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4b1529bdb.js" crossorigin="anonymous"></script>
+    <link href="./cart.css" rel="stylesheet" />
+    <title>Nursery Mart | Cart</title>
+</head>
+
+<body>
+    <header>
+        <img class="nav-img" src="./assets/logo.PNG" />
+        <div class="search">
+            <input placeholder="Search Item" class="search-bar" />
+            <button class="btn-search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="icons">
+            <button class="login btn primary-solid-btn">LOGIN</button>
+            <button class="icon-btn btn-no-decor">
+                <i class="far fa-2x fa-heart"></i>
+                <div class="badge-right badge-text badge-round">5</div>
+            </button>
+            <button class="icon-btn btn-no-decor">
+                <i class="fas fa-2x fa-shopping-cart"></i>
+                <div class="badge-right badge-text badge-round">6</div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <aside class="cart-items">
+            <div class="horizontal-card">
+                <img class="img-card-horizontal" src="Assets/Indoor/4-succulents-indoor.jpg" alt="Socculent Plants" loading="lazy"/>
+                <div class="card-horizontal-desc">
+                    <p>Top 4 Die Succulent Indoor Plants Pack</p>
+                    <div class="horizontal-price"><span class="stroked-price"><i
+                                class="fas ruppee-stroke fa-rupee-sign"></i> 995</span>
+                        <span class="actual-price bold"><i class="fas ruppee fa-rupee-sign"></i> 749</span></div>
+                    <div class="disc-percent">25%</div>
+                    <div class="quantity-cart-item">Quantity:
+                        <button class="btn-no-decor"><i class="fas fa-minus-circle"></i></button>
+                        <input class="input-quantity" min="1" value="1" />
+                        <button class="btn-no-decor"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <button class="btn primary-solid-btn">Remove from Cart</button>
+                    <button class="btn secondary-solid-btn">Move to Wishlist</button>
+                </div>
+            </div>
+            <div class="horizontal-card">
+                <img class="img-card-horizontal" src="Assets/Outdoor/gladiolus-random-color.jpg" alt="Gladiolus flower" loading="lazy"/>
+                <div class="card-horizontal-desc">
+                    <p>Gladiolus flower bulbs (Random color)</p>
+                    <div class="horizontal-price"><span class="stroked-price"><i
+                                class="fas ruppee-stroke fa-rupee-sign"></i> 200</span>
+                        <span class="actual-price bold"><i class="fas ruppee fa-rupee-sign"></i> 189</span></div>
+                    <div class="disc-percent">10%</div>
+                    <div class="quantity-cart-item">Quantity:
+                        <button class="btn-no-decor"><i class="fas fa-minus-circle"></i></button>
+                        <input class="input-quantity" min="1" value="1" />
+                        <button class="btn-no-decor"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                    <button class="btn primary-solid-btn">Remove from Cart</button>
+                    <button class="btn secondary-solid-btn">Move to Wishlist</button>
+                </div>
+            </div>
+        </aside>
+        <aside class="cart-bill">
+            <div class="bill-menu">
+                <h1>PRICE DETAILS</h1>
+                <hr>
+                <div>
+                    <div class="bill-desc">Price(2 items)</div>
+                    <div class="actual-price bold"><i class="fas ruppee fa-rupee-sign"></i>1195</div>
+                </div>
+                <div>
+                    <div class="bill-desc">Discount</div>
+                    <div class="actual-price bold">-<i class="fas ruppee fa-rupee-sign"></i>257</div>
+                </div>
+                <div>
+                    <div class="bill-desc">Delivery Charges</div>
+                    <div class="actual-price bold"><i class="fas ruppee fa-rupee-sign"></i>50</div>
+                </div>
+                <hr>
+                <div>
+                    <div class="bill-desc">TOTAL AMOUNT</div>
+                    <div class="actual-price bold"><i class="fas ruppee fa-rupee-sign"></i>988</div>
+                </div>
+                <hr>
+                <p class="bill-desc">You will save $199 on this order</p>
+                <button class="btn primary-solid-btn">PLACE ORDER</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-text">Made by Rishabh Ahuja</div>
+        <div class="footer-links">
+            <a src="https://github.com/Rishabh-078">
+                <i class="fab fa-github"></i>
+            </a>
+            <a src="https://twitter.com/Rishabh_0708">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a src="https://www.linkedin.com/in/rishabhahuja07/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
