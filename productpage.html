@@ -8,10 +8,10 @@
         content="width=Images: This component contains responsive image and round image
     Input: This component included standard Input box as well as input with error, success and warning validations., initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4b1529bdb.js" crossorigin="anonymous"></script>
-    <link href="./index.css" rel="stylesheet" />
+    <link href="./productpage.css" rel="stylesheet" />
     <title>Nursery Mart</title>
 </head>
-+
+
 <body>
     <header>
         <img class="nav-img" src="./assets/logo.PNG" />
@@ -33,45 +33,64 @@
             </button>
         </div>
     </header>
-    <section class="cover-container">
-        <img class="cover-pic" src="./assets/cover.jpg" alt="Cover image" loading="lazy">
-        <div class="cover-text">
-            <h1 class="h1-heading">
-                <span class="text-green">Happiness</span>
-            </h1>
-            <p>is turning your space into a <span class="text-green"> garden</span></p>
-            <a href="">
-                <button class=" btn primary-solid-btn"><a class="text-no-decor" href="./productpage.html">Submit Now</a></button>
-            </a>
-        </div>
-    </section>
 
+    <aside>
+        <section class="filter">
+            <h3 class="filter-title">Filters</h3>
+            <button class="filter-clear-btn btn-no-decor">Clear All</button>
+        </section>
+
+        <hr>
+
+        <section class="rating-section">
+            <h3 class="filter-title">Sort By</h3>
+            <label><input type="radio" name="rating" class="rating" /> Low to High</label>
+            <label><input type="radio" name="rating" class="rating" /> High to Low</label>
+        </section>
+
+        <hr>
+
+        <section class="price-section">
+            <h3 class="filter-title">Price Range</h3>
+            <div class="slidecontainer">
+                <input type="range" min="100" max="2500" value="500" class="slider" id="myRange">
+            </div>
+            <div class="max-min-range">
+                <p>100</p>
+                <p>2500</p>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="category-section">
+            <h3 class="filter-title">Categories</h3>
+            <div class="category-items">
+                <label><input type="checkbox" name="check" class="checkbox" checked />All Items</label>
+                <label><input type="checkbox" name="category" class="category" /> Indoor Plants</label>
+                <label><input type="checkbox" name="category" class="category" /> Outdoor Plants</label>
+                <label><input type="checkbox" name="category" class="category" /> Tools</label>
+                <label><input type="checkbox" name="category" class="category" /> Accessories</label>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="rating-section">
+            <h3 class="filter-title">Rating</h3>
+            <label><input type="radio" name="radio" class="radio" /> 4 stars & above</label>
+            <label><input type="radio" name="radio" class="radio" /> 3 stars & above</label>
+            <label><input type="radio" name="radio" class="radio" /> 2 stars & above</label>
+            <label><input type="radio" name="radio" class="radio" /> 1 star & above</label>
+        </section>
+    </aside>
     <main>
-        <h1 class="h1-heading">Categories</h1>
-        <div class="main-menu">
-            <div class="card-main indoor-card">
-                <img class="img-card-main" src="./Assets/Indoor/indoor.jpg" alt="indoor" loading="lazy"/>
-                <p>Indoor</p>
-            </div>
-            <div class="card-main outdoor-card">
-                <p>Outdoor</p>
-                <img class="img-card-main" src="./Assets/Outdoor/outdoor-main.jpg" alt="outdoor" loading="lazy"/>
-            </div>
-            <div class="card-main tools-card">
-                <img class="img-card-main" src="./assets/Tools/tools.jpg" alt="tools" loading="lazy"/>
-                <p>Tools</p>
-            </div>
-            <div class="card-main accessories-card">
-                <p>Accessories</p>
-                <img class="img-card-main" src="./assets/Accessories/accessories (1).png" alt="Accessories" loading="lazy"/>
-            </div>
-        </div>
-        <img class="img-center" src="./Assets/illustration-gardening.svg" alt="Gardening Illustration" loading="lazy"/>
         <h1 class="h1-heading">Top Sellers</h1>
         <div class="card-wrapper">
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Indoor/4-succulents-indoor.jpg" alt="Succulent Plants" loading="lazy"/>
+                <img class="img-item" src="./assets/Indoor/4-succulents-indoor.jpg" alt="Succulent Plants"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
                 <div class="card-info">
                     <div class="stroked-price">
@@ -83,7 +102,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/gladiolus-random-color.jpg" alt="Gladius Bulbs" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/gladiolus-random-color.jpg" alt="Gladius Bulbs"
+                    loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 200</div>
@@ -94,7 +114,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/crocus-random-color-bulbs.jpg" alt="Crocus flower Bulbs" loading="lazy" />
+                <img class="img-item" src="./assets/Outdoor/crocus-random-color-bulbs.jpg" alt="Crocus flower Bulbs"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 995</div>
@@ -105,7 +126,7 @@
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
                 <img class="img-item" src="./assets/Accessories/warli-painting-ceramic-3pots.jpg"
-                    alt="Warli Ceramic Pots" loading="lazy"/>
+                    alt="Warli Ceramic Pots" loading="lazy" />
                 <div class="badge-disc">Save 20%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1549</div>
@@ -115,7 +136,7 @@
             </div>
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/seeds.png" alt="15 Vegetable Seed" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/seeds.png" alt="15 Vegetable Seed" loading="lazy" />
                 <div class="badge-disc">Save 68%</div>
                 <div class="card-info">
                     <div class="stroked-price">
@@ -126,7 +147,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/bottle-pot-yellow.jpg" alt="Yellow Bottle Pot" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/bottle-pot-yellow.jpg" alt="Yellow Bottle Pot"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1000</div>
@@ -137,7 +159,7 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Tools/1025-bonsai-tool.jpg" alt="Gardening Tools" loading="lazy"/>
+                <img class="img-item" src="./assets/Tools/1025-bonsai-tool.jpg" alt="Gardening Tools" loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 299</div>
@@ -147,7 +169,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/outdoor-flowering-3.jpg" alt="Outdoor Plant Set" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/outdoor-flowering-3.jpg" alt="Outdoor Plant Set"
+                    loading="lazy" />
                 <div class="badge-disc">Save 30%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1570</div>
@@ -157,7 +180,8 @@
             </div>
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/adenium-plant-desert-rose.jpg" alt="Adenium Plant" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/adenium-plant-desert-rose.jpg" alt="Adenium Plant"
+                    loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
                 <div class="card-info">
                     <div class="stroked-price">
@@ -169,7 +193,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/10-cm-round-ceramic-pots-with-rim.jpg" alt="Ceramic Pots" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/10-cm-round-ceramic-pots-with-rim.jpg"
+                    alt="Ceramic Pots" loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 699</div>
@@ -180,7 +205,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/pebbles-white-small.jpg" alt="White Pebbles" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/pebbles-white-small.jpg" alt="White Pebbles"
+                    loading="lazy" />
                 <div class="card-info">
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 199</div>
                     <div class="card-desc">Marble Pebbles (White, Small, Polished) - 1 kg</div>
@@ -188,7 +214,8 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/nutrient-rich-soil-mix.jpg" alt="Nutrient rich Soil Mixer" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/nutrient-rich-soil-mix.jpg"
+                    alt="Nutrient rich Soil Mixer" loading="lazy" />
                 <div class="badge-disc">Save 20%</div>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 499</div>
@@ -214,4 +241,5 @@
         </div>
     </footer>
 </body>
+
 </html>
