@@ -1,0 +1,75 @@
+@import "./style/header.css";
+@import "./style/footer.css";
+@import "./style/cards.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a23df1;
+    --secondary-color: white;
+    --tertiary-color: grey;
+    --primary-color-b: #D2A0F8;
+    --quaternary-color: rgb(8, 100, 8);
+    --shadow-color: rgb(0 0 0 / 40%);
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cover-container{
+    position: relative;
+}
+
+.cover-text{
+    position: absolute;
+    bottom: 32%;
+    left: 32%;
+    background-color: rgba(255, 255, 255, 0.774);
+    width: 35rem;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.cover-text button{
+    margin-top: 1rem;
+}
+
+.cover-text h1{
+    padding: 0.75rem;
+}
+
+.cover-pic{
+    width: 100%;
+    max-height: 38rem;
+}
+
+.text-green{
+    color: var(--quaternary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.img-center{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+}
