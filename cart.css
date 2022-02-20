@@ -1,0 +1,74 @@
+@import "./style/header.css";
+@import "./style/footer.css";
+@import "./style/cards.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a23df1;
+    --secondary-color: white;
+    --tertiary-color: grey;
+    --primary-color-b: #D2A0F8;
+    --quaternary-color: rgb(8, 100, 8);
+    --shadow-color: rgb(0 0 0 / 40%);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 55vw 1fr;
+    grid-template-areas: "cart-items cart-bill";
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.cart-items{
+    grid-area: cart-items;
+    margin: auto;
+    width: 30rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.cart-bill{
+    grid-area: cart-bill;
+}
+
+.bill-menu{
+    width: 20rem;
+    box-shadow: rgb(0 0 0 / 24%) 1px 1px 5px;
+}
+
+.bill-menu h1{
+    display: flex;
+    place-content: center;
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+.bill-menu div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.bill-desc{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.bill-menu button{
+    width: 90%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.bold{
+    font-weight: 700;
+}
