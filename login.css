@@ -1,0 +1,79 @@
+@import "./style/header.css";
+@import "./style/footer.css";
+@import "./style/cards.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a23df1;
+    --secondary-color: white;
+    --tertiary-color: grey;
+    --primary-color-b: #D2A0F8;
+    --quaternary-color: rgb(8, 100, 8);
+    --shadow-color: rgb(0 0 0 / 40%);
+}
+
+button{
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.form-login {
+    display: flex;
+    flex-flow: column;
+    width: 20vw;
+    gap: 10px;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+}
+
+.form-login h2{
+    margin: auto;
+    font-size:2.5rem;
+}
+
+.input-form-login {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.link{
+    color: var(--primary-color);
+}
+
+.link:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.sign-link:hover{
+    transform: scale(1.1);
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-spacebetween label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flex-spaceevenly{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+

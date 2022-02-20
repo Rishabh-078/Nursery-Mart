@@ -44,22 +44,34 @@ header {
     font-weight: 550;
     font-size: 1rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 6px;
     background-color: var(--secondary-color);
     cursor: pointer;
-    box-shadow: var(--shadow-color) 0px 3px 8px;
 }
 
-.primary-solid-btn, .secondary-solid-btn:hover{
+.primary-solid-btn,
+.secondary-solid-btn:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
-.primary-solid-btn:hover,.secondary-solid-btn {
+.secondary-solid-btn {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
+}
+
+i,button{
+    cursor: pointer;
+}
+
+.icon-btn:hover{
+    transform: scale(1.1);
+}
+
+.primary-solid-btn:hover {
+    opacity: 0.7;
 }
 
 .btn-no-decor {
