@@ -10,16 +10,12 @@
 
 :root {
     --primary-color: #a23df1;
-    --secondary-color: white;
-    --tertiary-color: grey;
+    --secondary-color: rgb(255,255,255);
+    --tertiary-color: rgb(128,128,128);
     --primary-color-b: #D2A0F8;
     --quaternary-color: rgb(8, 100, 8);
     --shadow-color: rgb(0 0 0 / 40%);
     --wishlist-color:rgb(245, 20, 20);
-}
-
-button{
-    cursor: pointer;
 }
 
 main{

@@ -17,10 +17,6 @@
     --shadow-color: rgb(0 0 0 / 40%);
 }
 
-button{
-    cursor: pointer;
-}
-
 main{
     display: grid;
     grid-template-columns: 55vw 1fr;
