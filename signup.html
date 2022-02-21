@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=Images: This component contains responsive image and round image
+    Input: This component included standard Input box as well as input with error, success and warning validations., initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4b1529bdb.js" crossorigin="anonymous"></script>
+    <link href="./signup.css" rel="stylesheet" />
+    <title>Nursery Mart | signup</title>
+</head>
+
+<body>
+    <header>
+        <img class="nav-img" src="./assets/logo.PNG" />
+        <div class="search">
+            <input placeholder="Search Item" class="search-bar" />
+            <button class="btn-search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="icons">
+            <a class="text-no-decor" href="./login.html">
+                <button class="login btn primary-solid-btn">
+                    LOGIN</button></a>
+            <button class="icon-btn btn-no-decor">
+                <a href="./wishlist.html">
+                    <i class="far fa-2x fa-heart"></i>
+                    <div class="badge-right badge-text badge-round">5</div>
+                </a>
+            </button>
+            <button class="icon-btn btn-no-decor">
+                <a href="./cart.html">
+                    <i class="fas fa-2x fa-shopping-cart"></i>
+                    <div class="badge-right badge-text badge-round">6</div>
+                </a>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="form-container">
+            <form class="form-signup">
+                <h2>SignUp</h2>
+                <hr>
+                <div class="signup-input-field">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input class="input-form-signup" type="text" placeholder="Enter First Name" required />
+                </div>
+                <div class="signup-input-field">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input class="input-form-signup" type="text" placeholder="Enter Last Name" required />
+                </div>
+                <div class="signup-input-field">
+                    <label for="email" class="form-label">Email</label>
+                    <input class="input-form-signup" type="email" placeholder="Enter E-Mail Address" required /></div>
+                <div class="signup-input-field">
+                    <label for="password" class="form-label">Password</label>
+                    <input class="input-form-signup" placeholder="Enter Password" type="password" minlength="6"
+                        required />
+                    <i class="password-eye fas fa-eye"></i></div>
+                <div class="signup-input-field">
+                    <label for="password" class="form-label">Confirm Password</label>
+                    <input class="input-form-signup" placeholder="Enter Password" type="password" minlength="6"
+                        required />
+                    <i class="password-eye fas fa-eye"></i></div>
+                <label class="signup-terms"><input type="checkbox">By clicking you agree to our
+                    <a class="link" href="">T&C</a></label>
+                <button class="btn-submit-signup primary-solid-btn btn">SignUp </button>
+                <div class="flex-spaceevenly">Already have an account? <a class="link sign-link"
+                        href="./login.html">Login</a></div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-text">Made by Rishabh Ahuja</div>
+        <div class="footer-links">
+            <a src="https://github.com/Rishabh-078">
+                <i class="fab fa-github"></i>
+            </a>
+            <a src="https://twitter.com/Rishabh_0708">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a src="https://www.linkedin.com/in/rishabhahuja07/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

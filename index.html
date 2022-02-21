@@ -11,7 +11,7 @@
     <link href="./index.css" rel="stylesheet" />
     <title>Nursery Mart</title>
 </head>
-+
+
 <body>
     <header>
         <img class="nav-img" src="./assets/logo.PNG" />
@@ -22,14 +22,20 @@
             </button>
         </div>
         <div class="icons">
-            <button class="login btn primary-solid-btn">LOGIN</button>
+            <a class="text-no-decor" href="./login.html"> 
+            <button class="login btn primary-solid-btn">
+                LOGIN</button></a>
             <button class="icon-btn btn-no-decor">
-                <i class="far fa-2x fa-heart"></i>
-                <div class="badge-right badge-text badge-round">5</div>
+                <a href="./wishlist.html">
+                    <i class="far fa-2x fa-heart"></i>
+                    <div class="badge-right badge-text badge-round">5</div>
+                </a>
             </button>
             <button class="icon-btn btn-no-decor">
-                <i class="fas fa-2x fa-shopping-cart"></i>
-                <div class="badge-right badge-text badge-round">6</div>
+                <a href="./cart.html">
+                    <i class="fas fa-2x fa-shopping-cart"></i>
+                    <div class="badge-right badge-text badge-round">6</div>
+                </a>
             </button>
         </div>
     </header>
@@ -40,8 +46,8 @@
                 <span class="text-green">Happiness</span>
             </h1>
             <p>is turning your space into a <span class="text-green"> garden</span></p>
-            <a href="">
-                <button class=" btn primary-solid-btn"><a class="text-no-decor" href="./productpage.html">Submit Now</a></button>
+            <a href="./productpage.html">
+                <button class=" btn primary-solid-btn">Submit Now</button>
             </a>
         </div>
     </section>
@@ -49,30 +55,37 @@
     <main>
         <h1 class="h1-heading">Categories</h1>
         <div class="main-menu">
-            <div class="card-main indoor-card">
-                <img class="img-card-main" src="./Assets/Indoor/indoor.jpg" alt="indoor" loading="lazy"/>
-                <p>Indoor</p>
-            </div>
-            <div class="card-main outdoor-card">
+            <a href="./productpage.html" class="text-no-decor">
+            <div class="card-main main-left indoor-card">
+                <img class="img-card-main" src="./Assets/Indoor/indoor.jpg" alt="indoor" loading="lazy" />
+                <p >Indoor</p>
+            </div></a>
+            <a href="./productpage.html" class="text-no-decor">
+            <div class="card-main main-right outdoor-card">
                 <p>Outdoor</p>
-                <img class="img-card-main" src="./Assets/Outdoor/outdoor-main.jpg" alt="outdoor" loading="lazy"/>
-            </div>
-            <div class="card-main tools-card">
-                <img class="img-card-main" src="./assets/Tools/tools.jpg" alt="tools" loading="lazy"/>
+                <img class="img-card-main" src="./Assets/Outdoor/outdoor-main.jpg" alt="outdoor" loading="lazy" />
+            </div></a>
+            <a href="./productpage.html" class="text-no-decor">
+            <div class="card-main main-left tools-card">
+                <img class="img-card-main" src="./assets/Tools/tools.jpg" alt="tools" loading="lazy" />
                 <p>Tools</p>
-            </div>
-            <div class="card-main accessories-card">
+            </div></a>
+            <a href="./productpage.html" class="text-no-decor">
+            <div class="card-main main-right accessories-card">
                 <p>Accessories</p>
-                <img class="img-card-main" src="./assets/Accessories/accessories (1).png" alt="Accessories" loading="lazy"/>
-            </div>
+                <img class="img-card-main" src="./assets/Accessories/accessories (1).png" alt="Accessories"
+                    loading="lazy" />
+            </div></a>
         </div>
-        <img class="img-center" src="./Assets/illustration-gardening.svg" alt="Gardening Illustration" loading="lazy"/>
+        <img class="img-center" src="./Assets/illustration-gardening.svg" alt="Gardening Illustration" loading="lazy" />
         <h1 class="h1-heading">Top Sellers</h1>
         <div class="card-wrapper">
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Indoor/4-succulents-indoor.jpg" alt="Succulent Plants" loading="lazy"/>
+                <img class="img-item" src="./assets/Indoor/4-succulents-indoor.jpg" alt="Succulent Plants"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price">
                         <i class="fas ruppee-stroke fa-rupee-sign"></i>995</div>
@@ -83,8 +96,10 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/gladiolus-random-color.jpg" alt="Gladius Bulbs" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/gladiolus-random-color.jpg" alt="Gladius Bulbs"
+                    loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 200</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 189</div>
@@ -94,8 +109,10 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/crocus-random-color-bulbs.jpg" alt="Crocus flower Bulbs" loading="lazy" />
+                <img class="img-item" src="./assets/Outdoor/crocus-random-color-bulbs.jpg" alt="Crocus flower Bulbs"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 995</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 749</div>
@@ -105,8 +122,9 @@
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
                 <img class="img-item" src="./assets/Accessories/warli-painting-ceramic-3pots.jpg"
-                    alt="Warli Ceramic Pots" loading="lazy"/>
+                    alt="Warli Ceramic Pots" loading="lazy" />
                 <div class="badge-disc">Save 20%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1549</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 1239</div>
@@ -115,8 +133,9 @@
             </div>
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/seeds.png" alt="15 Vegetable Seed" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/seeds.png" alt="15 Vegetable Seed" loading="lazy" />
                 <div class="badge-disc">Save 68%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price">
                         <i class="fas ruppee-stroke fa-rupee-sign"></i>1245</div>
@@ -126,8 +145,10 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/bottle-pot-yellow.jpg" alt="Yellow Bottle Pot" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/bottle-pot-yellow.jpg" alt="Yellow Bottle Pot"
+                    loading="lazy" />
                 <div class="badge-disc">Save 25%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1000</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 750</div>
@@ -137,8 +158,9 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Tools/1025-bonsai-tool.jpg" alt="Gardening Tools" loading="lazy"/>
+                <img class="img-item" src="./assets/Tools/1025-bonsai-tool.jpg" alt="Gardening Tools" loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 299</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 269</div>
@@ -147,8 +169,10 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/outdoor-flowering-3.jpg" alt="Outdoor Plant Set" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/outdoor-flowering-3.jpg" alt="Outdoor Plant Set"
+                    loading="lazy" />
                 <div class="badge-disc">Save 30%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 1570</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 1099</div>
@@ -157,8 +181,10 @@
             </div>
             <div class="card-item">
                 <button class="btn abc primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Outdoor/adenium-plant-desert-rose.jpg" alt="Adenium Plant" loading="lazy"/>
+                <img class="img-item" src="./assets/Outdoor/adenium-plant-desert-rose.jpg" alt="Adenium Plant"
+                    loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price">
                         <i class="fas ruppee-stroke fa-rupee-sign"></i>399</div>
@@ -169,8 +195,10 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/10-cm-round-ceramic-pots-with-rim.jpg" alt="Ceramic Pots" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/10-cm-round-ceramic-pots-with-rim.jpg"
+                    alt="Ceramic Pots" loading="lazy" />
                 <div class="badge-disc">Save 10%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 699</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 629</div>
@@ -180,16 +208,20 @@
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/pebbles-white-small.jpg" alt="White Pebbles" loading="lazy"/>
-                <div class="card-info">
+                <img class="img-item" src="./assets/Accessories/pebbles-white-small.jpg" alt="White Pebbles"
+                    loading="lazy" />
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
+                    <div class="card-info">
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 199</div>
                     <div class="card-desc">Marble Pebbles (White, Small, Polished) - 1 kg</div>
                 </div>
             </div>
             <div class="card-item">
                 <button class="btn primary-solid-btn add-cart-btn">Add to Cart</button>
-                <img class="img-item" src="./assets/Accessories/nutrient-rich-soil-mix.jpg" alt="Nutrient rich Soil Mixer" loading="lazy"/>
+                <img class="img-item" src="./assets/Accessories/nutrient-rich-soil-mix.jpg"
+                    alt="Nutrient rich Soil Mixer" loading="lazy" />
                 <div class="badge-disc">Save 20%</div>
+                <button class="btn-wishlist btn-no-decor"><i class="fas fa-2x fa-heart"></i></button>
                 <div class="card-info">
                     <div class="stroked-price"><i class="fas ruppee-stroke fa-rupee-sign"></i> 499</div>
                     <div class="actual-price"><i class="fas ruppee fa-rupee-sign"></i> 399</div>
@@ -214,4 +246,5 @@
         </div>
     </footer>
 </body>
+
 </html>
